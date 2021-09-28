@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mt-3">
+                <div class="card-header bg-primary">
+                  <h2>{{ title }}
+                  <div class="ms">
+                  <button class="btn btn-success btn-lg" (click)="sortGender('Female')">F</button>
+                  &nbsp;<button class="btn btn-success btn-lg" (click)="sortGender('Male')">M</button>
+                  &nbsp;<button class="btn btn-success btn-lg" (click)="show()">A</button>
+                  </div>
+                  </h2>
+                </div>
+                  <div class="card-body">
+                    <table class="table table-striped table-hover  table-bordered">
+                      <tbody>
+                        <tr *ngFor="let part of event">
+                          <td>{{part.name}}</td>
+                          <td>{{part.age}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+          </div>
+        </div>
+    </div>
